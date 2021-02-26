@@ -2,6 +2,14 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: rgb(233, 233, 223);
+}
+
+.corpo {
+    background-color: white;
+}
+
 /* estilo header */
 
 .headerMenu {
@@ -33,7 +41,7 @@
     width:80%;
 }
 
-.tituloSecao1 {
+.titulos {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 15px;
     color: orangered;
@@ -46,6 +54,63 @@
     border: 0 solid white;
     border-radius: 160px;
     margin-bottom: 10px;
+}
+
+.hr {
+    width: 95%;
+}
+
+.degrade {
+    display: flex;
+    margin-top: 40px;
+}
+
+.imgDegrade {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+}
+
+.tituloCortes {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.preco {
+    text-align: end;
+}
+
+.descricaoEquipe {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.cargo {
+    color: orangered;
+}
+
+.imgEquipe {
+    width: 200px;
+    height: 200px;
+    border: 0 solid white;
+    border-radius: 160px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+}
+
+.redesSociais ul {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.redesSociais ul li {
+    display: flex;
 }
 
 /* estilo footer */

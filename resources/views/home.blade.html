@@ -1,0 +1,168 @@
+<!-- @include('layout.header') -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <!-- <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/estilo.css') }}" rel="stylesheet"> -->
+        <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../public/css/estilo.css" rel="stylesheet">
+        <link href="../../public/icon/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="headerMenu">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <!-- <img src="./img/logo.png" class="logo" alt=""> -->
+                        <img src="../../public/img/logo.png" class="logo" alt="">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav " id="itensMenu">
+                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+                      <a class="nav-link" href="/cadastro">Cadastro</a>
+                      <a class="nav-link" href="/modelos">Modelos</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main class="corpo">
+			<section class="row">
+			    <div class="col-md-12 offset-2 cardTitulo">
+			        <h1 class="titulos">Barbearia Cabra Macho</h1>
+			    </div>
+			    <div class="col-md-8 offset-4">
+			        <!-- <img src="./img/headerImg.jpg" class="imgTitulo" alt=""> -->
+			        <img src="../../public/img/headerImg.jpg" class="imgTitulo" alt="">
+			    </div>
+			</section>
+			<hr class="hr" />
+			<section class="row ">
+			    <div class="col-md-6 degrade">
+			    	<img class="imgDegrade" src="../../public/img/degrade1.jpg">
+			    	<img class="imgDegrade" src="../../public/img/degrade2.jpg">
+			    </div>
+			    <div class="col-md-5">
+			    	<h2 class="offset-4">Cortes</h2> 
+			    	<table class="table  table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Cortes</th>
+								<th scope="col" class="preco">Preço</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Maquina</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+							<tr>
+								<td>Tesoura</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+							<tr>
+								<td>Coloração</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+							<tr>
+								<td>Degradê</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+						</tbody>
+					</table>
+			    </div>
+			</section>
+			<hr class="hr" />
+			<section class="row">
+				<div class="col-md-5">
+			    	<h2 class="offset-4">Barba</h2> 
+			    	<table class="table  table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Estilos</th>
+								<th scope="col" class="preco">Preço</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Barba</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+							<tr>
+								<td>Barba com Maquina</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+							<tr>
+								<td>Barba Terapia</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+							<tr>
+								<td>Barba Modelado</td>
+								<td class="preco" >@mdo</td>
+							</tr>
+						</tbody>
+					</table>
+			    </div>
+			    <div class="col-md-6 degrade">
+			    	<img class="imgDegrade" src="../../public/img/barba2.jpg">
+			    	<img class="imgDegrade" src="../../public/img/barba1.jpg">
+			    </div>
+			</section>
+			<hr class="hr">
+			<section class="row">
+				<div class="col-md-12">
+					<h1 class="offset-4 titulos">Equipe</h1>
+					<p class=" descricaoEquipe">A equipe da Barbearia Cabra Macho se dedica a proporcionar o melhor serviço e o melhor atendimento aos nososs clientes. Contamos com os melhores profisionais do ramo que trabalham com exelência e profissionalismo.</p>
+				</div>
+				<div class="col-md-4" align="center">
+					<img src="../../public/img/barbeiro1.jpg" class="imgEquipe">
+					<h4 class="nomeEquipe">Berenilso</h4>
+					<h5 class="cargo">Barbeiro</h5>
+				</div>
+				<div class="col-md-4" align="center">
+					<img src="../../public/img/barbeiro2.jpg" class="imgEquipe">
+					<h4 class="nomeEquipe">Fransisglauso</h4>
+					<h5 class="cargo">Cabeleireiro</h5>
+				</div>
+				<div class="col-md-4" align="center">
+					<img src="../../public/img/barbeiro3.jpg" class="imgEquipe">
+					<h4 class="nomeEquipe">Regirvalsu</h4>
+					<h5 class="cargo">Finalizador</h5>
+				</div>
+			</section>
+			<hr class="hr" />
+			<section class="contato">
+				<div class="col-md-12">
+					<h1 class="offset-4 titulos">Contato</h1>
+				</div>
+				<div class="redesSociais">
+					<ul>
+						<li>
+							<i class="fab fa-facebook icone"></i>
+							<p>facebook.com/Barbearia-Cabra-Macho</p>
+						</li>
+						<li>
+							<i class="fab fa-instagram icone"></i>
+							<p>@Barbearia-Cabra-Macho</p>
+						</li>
+						<li>
+							<i class="fas fa-envelope icone"></i>
+							<p>Barbearia-Cabra-Macho@email.com</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+    	<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    	<script src="../../public/js/bootstrap.bundle.min.js"></script>
+    	<footer class="rodape">
+        	<p >2020&copy; todos os direitos reservados</p>
+    	</footer>
+	</body>
+</html>
+<!-- @include('layout.footer')
