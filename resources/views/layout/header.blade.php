@@ -5,6 +5,7 @@
         <title>Home</title>
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/estilo.css') }}" rel="stylesheet">
+        <link href="{{ asset('icon/all.min.css') }}" rel="stylesheet">
     </head>
     <body>
         <header class="headerMenu">

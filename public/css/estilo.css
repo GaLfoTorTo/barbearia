@@ -66,8 +66,8 @@ body {
 }
 
 .imgDegrade {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     margin: 5px;
 }
 
@@ -99,14 +99,18 @@ body {
     object-fit: cover;
 }
 
-.icone {
-    width: 50px;
-    height: 50px;
+#icone {
+    margin-right: 10px;
+    font-size: 45px;
+}
+
+.cardContato {
+    margin-top: 20px;
 }
 
 .redesSociais ul {
     list-style: none;
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .redesSociais ul li {
