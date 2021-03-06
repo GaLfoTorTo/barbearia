@@ -15,8 +15,8 @@ class CreateModelosTable extends Migration
     {
         Schema::create('modelos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome', 100);
-            $table->text('foto', 255);
+            $table->string('nome', 30)->nullable();
+            $table->text('foto', 255)->nullable();
             $table->timestamps();
         });
     }

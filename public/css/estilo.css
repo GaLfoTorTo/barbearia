@@ -79,7 +79,7 @@ body {
     text-align: end;
 }
 
-.descricaoEquipe {
+.descricao {
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
@@ -117,10 +117,55 @@ body {
     display: flex;
 }
 
+/*estilo agendamento*/
+
+.botaoCadastro {
+    background-color: orangered !important;
+    color: white;
+    margin-bottom: 10px;
+}
+
 /* estilo footer */
 
 .rodape {
     background: orangered;
-    height: 100px;
+    height: 150px;
     text-align: center;
+}
+
+.iconeRodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.iconeRodape button {
+    border: 0 solid white;
+    border-radius: 30px;
+    background-color: white;
+    margin: 5px;
+    padding: 0;
+    width: 40px;
+}
+
+.iconeRodape button:hover {
+    background-color: black;
+}
+
+.iconeRodape button i:hover {
+    color: white;
+}
+
+.iconeRodape button i {
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+}
+
+.rodape p {
+    position: relative;
+    top: 75px;
+    color: white;
 }

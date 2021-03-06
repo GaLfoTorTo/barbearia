@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Home</title>
+        <title>Barbearia Cabra Macho</title>
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/estilo.css') }}" rel="stylesheet">
         <link href="{{ asset('icon/all.min.css') }}" rel="stylesheet">
@@ -20,7 +20,7 @@
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav " id="itensMenu">
                       <a class="nav-link active" aria-current="page" href="/">Home</a>
-                      <a class="nav-link" href="/cadastro">Cadastro</a>
+                      <a class="nav-link" href="/agendamento">Agendamento</a>
                       <a class="nav-link" href="/modelos">Modelos</a>
                     </div>
                   </div>

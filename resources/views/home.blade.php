@@ -23,22 +23,12 @@
 				</tr>
 			</thead>
 			<tbody>
+				@forEach($cortes as $corte)
 				<tr>
-					<td>Maquina</td>
-					<td class="preco" >@mdo</td>
+					<td>{{ $corte->nome }}</td>
+					<td class="preco" >R${{ $corte->preco }}</td>
 				</tr>
-				<tr>
-					<td>Tesoura</td>
-					<td class="preco" >@mdo</td>
-				</tr>
-				<tr>
-					<td>Coloração</td>
-					<td class="preco" >@mdo</td>
-				</tr>
-				<tr>
-					<td>Degradê</td>
-					<td class="preco" >@mdo</td>
-				</tr>
+				@endForEach;
 			</tbody>
 		</table>
 	</div>
@@ -55,23 +45,12 @@
 				</tr>
 			</thead>
 			<tbody>
+				@forEach($barbas as $barba)
 				<tr>
-					<td>Barba</td>
-					<td class="preco" >@mdo</td>
+					<td>{{ $barba->nome }}</td>
+					<td class="preco" >R${{ $barba->preco }}</td>
 				</tr>
-				<tr>
-					<td>Barba com Maquina</td>
-					<td class="preco" >@mdo</td>
-				</tr>
-				<tr>
-					<td>Barba Terapia</td>
-					<td class="preco" >@mdo</td>
-				</tr>
-				<tr>
-					<td>Barba Modelado</td>
-					<td class="preco" >@mdo</td>
-				</tr>
-			</tbody>
+				@endForEach;
 		</table>
 	</div>
 	<div class="col-md-7 degrade">
@@ -83,7 +62,7 @@
 <section class="row">
 	<div class="col-md-12">
 		<h1 class="offset-5 titulos">Equipe</h1>
-		<p class=" descricaoEquipe">A equipe da Barbearia Cabra Macho se dedica a proporcionar o melhor serviço e o melhor atendimento aos nososs clientes. Contamos com os melhores profisionais do ramo que trabalham com exelência e profissionalismo.</p>
+		<p class=" descricao">A equipe da Barbearia Cabra Macho se dedica a proporcionar o melhor serviço e o melhor atendimento aos nososs clientes. Contamos com os melhores profisionais do ramo que trabalham com exelência e profissionalismo.</p>
 	</div>
 	<div class="col-md-4" align="center">
 		<img src="./img/barbeiro1.jpg" class="imgEquipe">
