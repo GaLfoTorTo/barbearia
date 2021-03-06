@@ -18,6 +18,8 @@ class CreateCategoriasTable extends Migration
             $table->string('nome', 30);
             $table->decimal('preco', 8,2);
             $table->enum('tipo',['barba','cabelo']);
+            $table->bigInteger('modelo_id')->nullable();
+            //$table->foreign('modelo_id')->references('id')->on('modelos');
             $table->timestamps();
         });
     }

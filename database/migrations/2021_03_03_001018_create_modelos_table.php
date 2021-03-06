@@ -17,6 +17,8 @@ class CreateModelosTable extends Migration
             $table->id();
             $table->string('nome', 30)->nullable();
             $table->text('foto', 255)->nullable();
+            $table->bigInteger('categoria_id');
+            //$table->foreign('categoria_id')->references('id')->on('categorias');
             $table->timestamps();
         });
     }

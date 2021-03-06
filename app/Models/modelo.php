@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class modelo extends Model
 {
-	//protected $modelo = 'modelos';
+	protected $modelo = 'modelo';
 
     public function categorias() 
     {
-    	return $this->beLongsTo('categoria');
+    	return $this->beLongsTo(categoria::class, 'categoria_id');
     }
 }
