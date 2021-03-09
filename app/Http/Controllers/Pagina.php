@@ -3,27 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\categoria;
-use App\Models\modelo;
+use App\Models\Categoria;
+use App\Models\Modelo;
 
 class Pagina extends Controller
 {
 
     public function home(){
-    	$cortes = categoria::all()->where('tipo' , 'cabelo');
-    	$barbas = categoria::all()->where('tipo' , 'barba');
+    	$cortes = Categoria::where('tipo' , 'cabelo')->get();
+    	$barbas = Categoria::where('tipo' , 'barba')->get();
         return view('home', compact('cortes', 'barbas'));
     }
 
     public function agendamento(){
-    	$cortes = categoria::all()->where('tipo' , 'cabelo');
-    	$barbas = categoria::all()->where('tipo' , 'barba');
+    	$cortes = Categoria::where('tipo' , 'cabelo')->get();
+    	$barbas = Categoria::where('tipo' , 'barba')->get();
         return view('agendamento', compact('cortes' , 'barbas'));
     }
 
     public function modelos(){
-        $modelos = modelo::all();
-        dd($modelos);
-        return view('modelos');
+        $barbas = Modelo::with('categoria')->get();
+        //$cortes = Modelo::with('categoria')->where('tipo','corte')->get();
+        return view('modelos', compact('barbas'));
     }
 }

@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class categoria extends Model
+class Categoria extends Model
 {
 	protected $categoria = 'categoria';
 	
 	public function modelos()
 	{
-		return $this->hasMany(modelo::class, 'modelo_id');
+		return $this->hasMany(Modelo::class);
 	}    
 }

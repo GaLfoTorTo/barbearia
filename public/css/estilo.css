@@ -117,6 +117,13 @@ body {
     display: flex;
 }
 
+/*estilo modelos */
+
+.fotos {
+    width: 200px;
+    height: 200px;
+}
+
 /*estilo agendamento*/
 
 .botaoCadastro {

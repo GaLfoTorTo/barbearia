@@ -19,9 +19,9 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav " id="itensMenu">
-                      <a class="nav-link active" aria-current="page" href="/">Home</a>
-                      <a class="nav-link" href="/agendamento">Agendamento</a>
-                      <a class="nav-link" href="/modelos">Modelos</a>
+                      <a class="nav-link {{ request()->segment(1) == '' ? 'active' : '' }}" aria-current="page" href="/">Home</a>
+                      <a class="nav-link {{ request()->segment(1) == 'agendamento' ? 'active' : '' }}  " href="/agendamento">Agendamento</a>
+                      <a class="nav-link {{ request()->segment(1) == 'modelos' ? 'active' : '' }}" href="/modelos">Modelos</a>
                     </div>
                   </div>
                 </div>
