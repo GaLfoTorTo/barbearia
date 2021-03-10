@@ -22,8 +22,15 @@ class Pagina extends Controller
     }
 
     public function modelos(){
-        $barbas = Modelo::with('categoria')->get();
-        //$cortes = Modelo::with('categoria')->where('tipo','corte')->get();
-        return view('modelos', compact('barbas'));
+        $categorias = Categoria::with('modelos')->get();
+        /* foreach($categorias as $cat) {
+            echo '<strong>Categoria: ' . ucfirst($cat->nome) . '</strong><br>'; 
+            foreach($cat->modelos as $modelo) {
+                echo ' -- ' . $modelo->nome . '<br>' ;
+            }
+            echo '<br><br>' ;
+            
+        } */
+        return view('modelos', compact('categorias'));
     }
 }
