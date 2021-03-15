@@ -18,7 +18,7 @@ class modeloSeeder extends Seeder
     		DB::table('modelos')->insert([
     			[
     				'nome' => 'barba maquina 01',
-    				'foto' => 'https://lh3.googleusercontent.com/proxy/F_7bIjNz7ss1-phHM-y4JaL18qHjzrn1PNzsbLBHoCGwFVzmbcgu6_y7TvgyTqvtRlG6rNIOFX2O-_pqcFG2zYnuqMGiXZ71O0OF5XXu7v_jMDTI0vgO43I_wJIAIZ32WFOJvLX7OEkXZ9w0',
+    				'foto' => 'https://s2.glbimg.com/griQwPVve6PfFidnOJlyLCTTFA0=/0x0:507x338/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2018/y/5/09OBfaQ96HUrexsMZUdw/beard-man.jpg',
                     'categoria_id' => 1
     			],
     			[

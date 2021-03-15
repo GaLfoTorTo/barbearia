@@ -119,10 +119,81 @@ body {
 
 /*estilo modelos */
 
-.fotos {
-    width: 200px;
-    height: 200px;
+.cardFotos {
+    width: 80vw;
 }
+
+.itens {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.item {
+    margin-right: 5px; 
+    margin-left: 5px;
+    width: 33%;
+    flex: none;
+}
+
+.fotos {
+    width: 100%;
+    height: 200px;
+    scroll-snap-align: start;
+}
+
+.botoesCarousel {
+    width: 90px;
+    position: relative;
+    top: 75%;
+}
+
+.botaoCarousel {
+    border: 0 solid white;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 11px;
+    margin: 1px;
+}
+
+.botaoArrow {
+    border: 0 solid white;
+    border-radius: 25px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    bottom: 46%;
+    outline: none; 
+}
+
+.botaoArrow:focus {
+    /*outline: 5px auto -webkit-focus-ring-color;*/
+}
+
+.botaoRight {
+    flex-direction: row-reverse;
+    position: relative;
+    left: 91%; 
+}
+
+.botaoRight:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.botaoLeft {
+    position: relative;
+    left: 1%;
+}
+
+.botaoLeft:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.arrowIcon {
+    color: white;
+}
+
 
 /*estilo agendamento*/
 

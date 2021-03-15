@@ -1,7 +1,7 @@
 @include('layout.header')
 <section class="row">
     <div class="col-md-12">
-        <h1 class="titulos  offset-2">Agendamento</h1>
+        <h1 class="titulos  offset-3">Agendamento</h1>
         <p class="descricao">Ficou interessado no nosso serviço ? Quer marcar o seu agendamento imediatamente ? Então preenchao formulário de cadastro e informe qual serviço desejaria fazer.</p>
     </div>
 </section>
@@ -89,7 +89,9 @@
                 <div class="form-group">
                     <label for="profissional">Barbeiro</label>
                     <select name="profissional" id="profissional" class="form-control">
-                        <option value="">Escolha</option>
+                        @foreach($profissionais as $profissional)
+                            <option value="">{{ $profissional->cargo }} - {{ $profissional->nome }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>

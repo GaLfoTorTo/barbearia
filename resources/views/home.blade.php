@@ -64,22 +64,14 @@
 		<h1 class="offset-5 titulos">Equipe</h1>
 		<p class=" descricao">A equipe da Barbearia Cabra Macho se dedica a proporcionar o melhor serviço e o melhor atendimento aos nososs clientes. Contamos com os melhores profisionais do ramo que trabalham com exelência e profissionalismo.</p>
 	</div>
-	<div class="col-md-4" align="center">
-		<img src="./img/barbeiro1.jpg" class="imgEquipe">
-		<h4 class="nomeEquipe">Berenilso</h4>
-		<h5 class="cargo">Barbeiro</h5>
-	</div>
-	<div class="col-md-4" align="center">
-		<img src="./img/barbeiro2.jpg" class="imgEquipe">
-		<h4 class="nomeEquipe">Fransisglauso</h4>
-		<h5 class="cargo">Cabeleireiro</h5>
-	</div>
-	<div class="col-md-4" align="center">
-		<img src="./img/barbeiro3.jpg" class="imgEquipe">
-		<h4 class="nomeEquipe">Regirvalsu</h4>
-		<h5 class="cargo">Finalizador</h5>
-	</div>
-</section>
+	@foreach($profissionais as $profissional)
+		<div class="col-md-4" align="center">
+			<img src="{{ $profissional->foto}}" class="imgEquipe">
+			<h4 class="nomeEquipe">{{ $profissional->nome }}</h4>
+			<h5 class="cargo">{{ $profissional->cargo }}</h5>
+		</div>
+	@endForeach
+	</section>
 <hr class="hr" />
 <section class="contato">
 	<div class="col-md-12">
