@@ -156,5 +156,7 @@
 @include("layout.footer")
 <script>
     var carousel = document.getElementsByClassName('itens');
-    console.log(carousel);
+    $(document).ready(function {
+        
+    })
 </script>
