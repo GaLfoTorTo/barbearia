@@ -25,7 +25,8 @@ class Pagina extends Controller
     }
 
     public function modelos(){
-        $categoria = Categoria::with('modelos')->get();
-        return view('modelos', compact('categoria'));
+        $categorias = Categoria::with('modelos')->get();
+        return view('modelos', compact('categorias'));
+
     }
 }

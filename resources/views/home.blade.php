@@ -28,7 +28,7 @@
 					<td>{{ $corte->nome }}</td>
 					<td class="preco" >R${{ $corte->preco }}</td>
 				</tr>
-				@endForEach;
+				@endForEach
 			</tbody>
 		</table>
 	</div>
@@ -50,7 +50,7 @@
 					<td>{{ $barba->nome }}</td>
 					<td class="preco" >R${{ $barba->preco }}</td>
 				</tr>
-				@endForEach;
+				@endForEach
 		</table>
 	</div>
 	<div class="col-md-7 degrade">

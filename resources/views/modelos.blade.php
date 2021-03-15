@@ -12,6 +12,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
+<<<<<<< HEAD
             <h3 class="titulos offset-1">Barbas Maquina</h3>
         </div>
         <div class="col-md-11 carousel cs-hidden">
@@ -39,6 +40,60 @@
             <button class="botaoArrow botaoRight" data-bs-target="#carousel_slide" type="button" data-slide="next">
                 <span class="arrowIcon fas fa-arrow-right" aria-hidden="true"></span>
             </button>   
+=======
+            <h1 class="titulos offset-3">Barba Maquina</h1>
+        </div>
+        <div class=" cardCarrousel">
+            @foreach($categorias as $categoria)
+                    @foreach ($categoria->modelos as $barbaMaquina)
+                        @if( $barbaMaquina->categoria_id == 1)
+                            <img src="{{ $barbaMaquina->foto }}" alt="" class="fotos">
+                        @endif
+                    @endforeach
+            @endforeach
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="titulos offset-3">Barba Navalha</h1>
+        </div>
+        <div class=" cardCarrousel">
+            @foreach($categorias as $categoria)
+                    @foreach ($categoria->modelos as $barbaNavalha)
+                        @if( $barbaNavalha->categoria_id == 2)
+                            <img src="{{ $barbaNavalha->foto }}" alt="" class="fotos">
+                        @endif
+                    @endforeach
+            @endforeach
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="titulos offset-3">Degradê</h1>
+        </div>
+        <div class=" cardCarrousel">
+            @foreach($categorias as $categoria)
+                    @foreach ($categoria->modelos as $degrade)
+                        @if( $degrade->categoria_id == 7)
+                            <img src="{{ $degrade->foto }}" alt="" class="fotos">
+                        @endif
+                    @endforeach
+            @endforeach
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="titulos offset-3">Coloração</h1>
+        </div>
+        <div class=" cardCarrousel">
+            @foreach($categorias as $categoria)
+                    @foreach ($categoria->modelos as $coloracao)
+                        @if( $coloracao->categoria_id == 8)
+                            <img src="{{ $coloracao->foto }}" alt="" class="fotos">
+                        @endif
+                    @endforeach
+            @endforeach
+>>>>>>> cfca95ba00361d0c121c6931ed7fbeca6c8afc35
         </div>
     </div>
 </section> 
